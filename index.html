@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header class="header">
+    <h1>Jogo da Velha</h1>
+    </header>
+    <main class="container">
+        <div class="players">
+            <label for="player1"><span class="x-symbol">X</span></label>
+            <input type="text" id="player1" placeholder="Nome do jogador 1">
+            <label for="player2"><span class="o-symbol">O</span></label>
+            <input type="text" id="player2" placeholder="Nome do jogador 2">
+        </div>
+        <button class="startBtn" id="start">Jogar!</button>
+        <h2>Vez de: <span id="turnPlayer"></span></h2>
+    </main>
+    
+    <section id="gameBoard">
+        <span class="cursor-pointer" data-region="0.0"></span>
+        <span class="cursor-pointer" data-region="0.1"></span>
+        <span class="cursor-pointer" data-region="0.2"></span>
+        <span class="cursor-pointer" data-region="1.0"></span>
+        <span class="cursor-pointer" data-region="1.1"></span>
+        <span class="cursor-pointer" data-region="1.2"></span>
+        <span class="cursor-pointer" data-region="2.0"></span>
+        <span class="cursor-pointer" data-region="2.1"></span>
+        <span class="cursor-pointer" data-region="2.2"></span>
+    </section>
+</body>
+</html>

@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #192a32;
+}
+
+input {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8bfc9;
+    font-family:'Cherry Bomp one', sans-serif;
+    
+}
+
+h2 {
+    color:#a8bfc9;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Bungee Spice', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin:  0 auto;
+    max-width: 600px;
+    padding: 0 20px;
+    width: 100%; 
+}
+
+.players {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+#gameBoard {
+    background-color: #192a32;
+    display: grid;
+    grid-template-columns: 8rem 8rem 8rem;
+    grid-template-rows: 8rem 8rem 8rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 25rem;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+#gameBoard span {
+    border-radius: 15px;
+    margin: 5px;
+    background-color: #1f3640;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+    box-shadow: 0px 5px 1px 0px #14222b;
+}
+
+
+#gameBoard span.win {
+    background-color: #25a340;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.x-symbol, .o-symbol {
+    color: orange;
+    font-family: 'Cherry Bomp one', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    
+}
+.o-symbol {
+    color: aqua;
+}
+
+.startBtn {
+    padding: 10px;
+    background-color: #25a340;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family:'Cherry Bomp one', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+
+.startBtn:hover {
+    background: #188330;
+    transition: .4s;
+}
+
+/* Responsividade (max-width: 768px) */
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.6rem;
+    }
+}
+
+/* Responsividade (max-width: 550px) */
+
+@media (max-width: 550px) {
+    .header {
+        font-size: 1.3rem;
+    }
+    #gameBoard {
+        background-color: #192a32;
+        display: grid;
+        grid-template-columns: 8rem 8rem 8rem;
+        grid-template-rows: 8rem 8rem 8rem;
+        gap: .3rem;
+        margin-bottom: 1.5rem;       
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+/* Responsividade (max-width: 450px) */
+
+@media (max-width: 450px) {
+    .header {
+        font-size: 1rem;
+    }
+    #gameBoard {
+        background-color: #192a32;
+        display: grid;
+        grid-template-columns: 7rem 7rem 7rem;
+        grid-template-rows: 7rem 7rem 7rem;
+        gap: .1rem;
+        max-width: 23rem;
+        margin-bottom: 1rem;       
+        border-radius: 15px;
+        margin: 0 auto;
+        
+    }
+}
+
+/* Responsividade (max-width: 375px) */
+
+@media (max-width: 375px) {
+    .header {
+        font-size: 1rem;
+    }
+    #gameBoard {
+        background-color: #192a32;
+        display: grid;
+        grid-template-columns: 6rem 6rem 6rem;
+        grid-template-rows: 6rem 6rem 6rem;
+        gap: .1rem;
+        max-width: 20rem;
+        margin-bottom: 1rem;       
+        border-radius: 15px;
+        margin: 0 auto;
+        
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #gameBoard {
+        background-color: #192a32;
+        display: grid;
+        grid-template-columns: 5rem 5rem 5rem;
+        grid-template-rows: 5rem 5rem 5rem;
+        gap: .1rem;
+        max-width: 17rem;
+        margin-bottom: 1rem;       
+        border-radius: 15px;
+        margin: 0 auto;     
+    }
+    .x-symbol, .o-symbol {
+        font-size: 20px;
+    }
+}
+
